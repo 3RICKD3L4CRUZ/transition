@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+font-family: verdana;
+font-size: 16px;
+line-height: 24px;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.margen{
+    padding: 15px;
+}
+header{
+    text-align: center;
+    padding: 10px;
+}
+header samp{
+    color: red;
+    font-family: Helvetica;
+}
+header span{
+    color: black;
+    font-family: Helvetica;
+}
+header span{
+    font-weight: bold;
+}
+header p{
+    font-size: 24px;
+}
+header h1{
+    text-decoration: none;
+}
+header hr{
+    border: 1px red solid;
+    width: 50px;
+    margin: auto;
+}
+.cuadrado{
+    width: 300px;
+    height: 300px;
+}
+.rectangulo{
+    width: 620px;
+    height: 300px;
+}
+.contporta{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fila{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.contimg figure{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.contimg figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.transicionchida{
+    width: 100%;
+    height:100%;
+    background-color:rgba(255, 255, 255, 0.875);
+    border: 3px solid #DEE6ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1.0s linear;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+.contimg:hover .transicionchida{
+    top: 0;
+}
+.icono{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+.icono i {
+    color: white;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+/* --------------------------------- */
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 430px;
+    /* border: 1px red solid;   */
+}
+.centrado figure{
+    flex-direction: row;
+}
+.recuadro{
+    width: 18%;
+    text-align: center;
+}
+.recuadro p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.recuadro samp{
+    font-family: Helvetica;
+    font-size: 12px;
+}
+.fotosp{
+    width: 200px;
+    margin: auto;
+}
+.fotosp img{
+    width: 100%;
+    filter: grayscale(100%);
+    
+}
+.fotosp img:hover{
+    filter: grayscale(0%);
+}
+/* ----------------------------- */
+.ofert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 630px;
+    width: 100%;
+    background-color: #d9d9d9;
+    gap: 40px;
+}
+.ofertas{
+    border: 1px #ccc solid;
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    min-height: 525px;
+    text-align: center;
+    transition: all 0.9s linear;
+    /* transform: rotate(0deg); */
+    transform: scale(1);
+    margin-top: 50px;
+}
+.ofertas:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+.ofertas ul{
+    list-style: none;
+}
+.ofertas p{
+    font-size: 20px;
+}
+.ofertas samp{
+    font-size: 24px;
+    font-family: Helvetica;
+}
+.ofertas span{
+    color: red;
+    font-size: 16px;
+}
+.ofertas hr{
+    margin: 10px 0px;
+}
+.ofertas ul li{
+    margin: 30px 0px;
+}
+.ofert i{
+    font-size: 30px;
+}
+.ofertas a{
+    border: 2px #333 solid;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+.ofertas a:hover{
+    border: 2px white solid;
+    padding: 10px 30px;
+    background-color: #333;
+    text-decoration: none;
+    color: white;
+}
+/* ----------------------------------- */
+.continfo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.continfo2{
+    border: 0px #333 solid;
+    width: 25%;
+}
+.continfo2 figure{
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+.foto3{
+    width: 300px;
+    margin: auto;
+    overflow: hidden; 
+    display: inline-block;
+}
+.foto3 img{
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.foto3 img:hover {
+    transform: scale(1.1);
+}
+.continfo2 hr{
+    margin: 10px 0px;
+}
+.continfo2 p{
+    font-family: Arial;
+    margin: 0px 10px;
+    font-size: 14px;
+}
+.continfo2 span{
+    font-family: Arial;
+    margin: 0px 10px;
+    font-size: 16px;
+    color: red;
+}
+.continfo2 a{
+    font-family: Arial;
+    color: #333;
+    margin: 0px 20px;
+    font-size: 14px;
+}
